@@ -1,0 +1,67 @@
+body, html {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(ellipse at center, #0d0d0d 0%, #000000 100%);
+  color: white;
+}
+
+.landing-page {
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-buttons {
+    .sign-in, .sign-up {
+      margin-left: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .sign-in {
+      background: #000;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .sign-up {
+      background: linear-gradient(to right, #5f5df5, #7f60f9);
+      color: white;
+    }
+  }
+}
+
+.hero {
+  margin-top: 100px;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .get-started {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #5f5df5, #7f60f9);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
