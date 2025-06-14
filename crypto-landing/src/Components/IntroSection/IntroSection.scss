@@ -1,0 +1,55 @@
+.intro-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000; // fallback in case image fails
+  width: 100vw;
+  padding: 8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.intro-content {
+  max-width: 800px;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.gradient-button {
+  background: linear-gradient(90deg, #a259ff, #3772ff);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 23px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
