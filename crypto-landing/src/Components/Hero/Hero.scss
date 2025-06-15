@@ -104,3 +104,37 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    &__header-content {
+      flex-direction: column;      // stack nav and buttons vertically
+      align-items: center;         // center horizontally
+      gap: 1rem;                  // space between nav and buttons
+    }
+
+    &__nav {
+      flex-direction: row;         // keep li elements in a row
+      justify-content: center;     // center the li elements horizontally
+      flex-wrap: wrap;             // wrap if needed on very small widths
+      gap: 1rem;                   // spacing between li elements
+    }
+
+    &__buttons {
+      position: static;            // remove absolute positioning
+      transform: none;             // reset transform
+      display: flex;
+      flex-direction: row;         // buttons side by side
+      justify-content: center;     // center buttons horizontally
+      gap: 1rem;                   // spacing between buttons
+      width: 100%;                 // optional: buttons stretch full width container
+      max-width: 300px;            // optional: limit max width for buttons row
+    }
+
+    &__content {
+      h1 {
+        font-size: 3rem;           // smaller heading on phones
+      }
+    }
+  }
+}
