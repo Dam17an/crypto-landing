@@ -1,0 +1,120 @@
+.footer {
+  width: 100%;
+  background: url('../assets/bg7.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__top {
+    text-align: center;
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer__form {
+      display: flex;
+      justify-content: center;
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid transparent;
+      border-image: linear-gradient(90deg, #7b61ff, #9f9fff);
+      border-image-slice: 1;
+      border-radius: 2rem;
+      overflow: hidden;
+
+      input {
+        flex: 1;
+        padding: 0.6rem 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: none;
+        color: white;
+        outline: none;
+        font-size: 0.9rem;
+
+        &::placeholder {
+          color: #aaa;
+        }
+      }
+
+      button {
+        padding: 0 1rem;
+        background: transparent;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #9f9fff;
+        }
+      }
+    }
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+
+    h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 0.3rem 0;
+
+        a {
+          color: #ccc;
+          text-decoration: none;
+          font-size: 0.9rem;
+
+          &:hover {
+            color: #9f9fff;
+          }
+        }
+      }
+    }
+
+    .footer__socials {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 2rem;
+  }
+}

@@ -4,7 +4,7 @@ import './Hero.scss';
 const Hero = () => {
     return (
         <div className="hero">
-            {/* Header with centered nav and right-aligned buttons */}
+
             <div className="hero__header">
                 <div className="hero__header-content">
                     <ul className="hero__nav">

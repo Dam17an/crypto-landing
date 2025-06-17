@@ -47,9 +47,9 @@
     border: 1px solid transparent;
     border-image: linear-gradient(90deg, #7b61ff, #9f9fff);
     border-image-slice: 1;
-    border-radius: 2rem; // Increased roundness
+    border-radius: 2rem;
     overflow: hidden;
-    max-width: 320px; // Smaller form width
+    max-width: 320px;
     margin: 0 auto;
 
     input {
@@ -60,7 +60,7 @@
       color: white;
       outline: none;
       font-size: 0.9rem;
-      border-radius: 0; // Keep input corners clean inside rounded parent
+      border-radius: 0;
 
       &::placeholder {
         color: #aaa;
