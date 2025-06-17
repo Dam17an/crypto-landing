@@ -1,0 +1,83 @@
+.subscription {
+  width: 100%;
+  min-height: 100vh;
+  background: url('../assets/bg6.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__content {
+    max-width: 500px;
+    width: 100%;
+
+    h2 {
+      font-size: 5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+
+      a {
+        color: #9f9fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    border: 1px solid transparent;
+    border-image: linear-gradient(90deg, #7b61ff, #9f9fff);
+    border-image-slice: 1;
+    border-radius: 2rem; // Increased roundness
+    overflow: hidden;
+    max-width: 320px; // Smaller form width
+    margin: 0 auto;
+
+    input {
+      padding: 0.75rem 1rem;
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: none;
+      color: white;
+      outline: none;
+      font-size: 0.9rem;
+      border-radius: 0; // Keep input corners clean inside rounded parent
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    button {
+      padding: 0 1rem;
+      background: transparent;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+  }
+}
+
+
+

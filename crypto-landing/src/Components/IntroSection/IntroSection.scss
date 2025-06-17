@@ -21,9 +21,9 @@
     font-weight: 800;
     margin-bottom: 1.5rem;
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
       font-size: 3.5rem;
-      margin-right: 15px;
+      margin-left: 15px;
     }
   }
 
@@ -35,7 +35,7 @@
 
     @media (max-width: 768px) {
       font-size: 1.125rem;
-      margin-right: 15px;
+      margin-left: 15px;
     }
   }
 }

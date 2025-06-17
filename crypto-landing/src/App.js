@@ -3,6 +3,7 @@ import FeatureCards from "./Components/FeatureCards/FeatureCards";
 import IntroSection from "./Components/IntroSection/IntroSection";
 import Support from "./Components/Support/Support";
 import Trade from "./Components/Trade/Trade";
+import Subscription from "./Components/Subscription/Subscription";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <IntroSection />
             <Support />
             <Trade />
+            <Subscription />
         </div>
     );
 }
